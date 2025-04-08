@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>职业社区 - FuturePreppers</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex-shrink-0 flex items-center">
+                        <span class="text-primary-600 font-bold text-xl">FuturePreppers</span>
+                    </a>
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                        <a href="index.html" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">首页</a>
+                        <a href="features.html" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">功能</a>
+                        <a href="job-tracker.html" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">求职进度</a>
+                        <a href="community.html" class="border-primary-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">社区</a>
+                        <a href="about.html" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">关于我们</a>
+                    </div>
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:items-center space-x-4">
+                    <a href="login.html" class="text-gray-500 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium">登录</a>
+                    <a href="signup.html" class="btn-primary">注册</a>
+                </div>
+                <div class="-mr-2 flex items-center sm:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500" aria-expanded="false">
+                        <span class="sr-only">打开主菜单</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-secondary-700 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl">
+                    职业发展社区
+                </h1>
+                <p class="mt-3 max-w-md mx-auto text-base text-secondary-100 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
+                    连接同辈与行业前辈，获取求职指导与内推机会
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Peer Exchange Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
+                <div>
+                    <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                        同辈交流平台
+                    </h2>
+                    <p class="mt-3 max-w-3xl text-lg text-gray-500">
+                        与其他求职者分享经验，交流面试技巧，相互支持，共同成长。
+                    </p>
+                    <div class="mt-8 space-y-4">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <i class="fas fa-comments text-secondary-600 text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-gray-900">行业讨论组</h3>
+                                <p class="mt-2 text-base text-gray-500">
+                                    根据不同行业领域分类的讨论组，与志同道合的求职者交流经验和见解。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <i class="fas fa-lightbulb text-secondary-600 text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-gray-900">求职经验分享</h3>
+                                <p class="mt-2 text-base text-gray-500">
+                                    汇集优质求职经验贴，了解不同公司的面试流程和技巧，避免踩坑。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <i class="fas fa-hands-helping text-secondary-600 text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-gray-900">互助答疑</h3>
+                                <p class="mt-2 text-base text-gray-500">
+                                    提出你的求职疑问，获取来自社区成员的专业解答和建议。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <a href="#" class="btn-secondary">
+                            浏览讨论区
+                        </a>
+                    </div>
+                </div>
+                <div class="mt-10 lg:mt-0">
+                    <img class="rounded-lg shadow-xl" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="同辈交流场景">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mentor Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
+                <div class="order-2 lg:order-1 mt-10 lg:mt-0">
+                    <img class="rounded-lg shadow-xl" src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="导师指导场景">
+                </div>
+                <div class="order-1 lg:order-2">
+                    <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                        导师指导计划
+                    </h2>
+                    <p class="mt-3 max-w-3xl text-lg text-gray-500">
+                        链接行业优秀前辈，获取一对一专业指导，助力职业发展。
+                    </p>
+                    <div class="mt-8 space-y-4">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <i class="fas fa-user-tie text-secondary-600 text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-gray-900">行业导师匹配</h3>
+                                <p class="mt-2 text-base text-gray-500">
+                                    根据你的职业规划和兴趣，匹配相关行业的优秀导师，提供针对性指导。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <i class="fas fa-chalkboard-teacher text-secondary-600 text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-gray-900">一对一咨询</h3>
+                                <p class="mt-2 text-base text-gray-500">
+                                    与导师进行一对一线上咨询，获取针对性的职业建议和发展规划。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <i class="fas fa-handshake text-secondary-600 text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-gray-900">内推机会</h3>
+                                <p class="mt-2 text-base text-gray-500">
+                                    表现优秀的学员有机会获得导师的内部推荐，提高入职成功率。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <a href="#" class="btn-secondary">
+                            寻找导师
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Mentors Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="section-title">优秀导师推荐</h2>
+                <p class="section-subtitle">来自各大知名企业的行业精英，为你的职业发展保驾护航</p>
+            </div>
+
+            <div class="mt-10 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
+                <!-- 导师1 -->
+                <div class="card p-6 flex flex-col items-center text-center">
+                    <img class="h-32 w-32 rounded-full object-cover" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="导师头像">
+                    <h3 class="mt-6 text-xl font-medium text-gray-900">王峰</h3>
+                    <p class="text-sm text-primary-600">腾讯 | 高级产品经理</p>
+                    <p class="mt-3 text-base text-gray-500">
+                        拥有8年互联网产品经验，曾主导多个亿级用户产品的设计与上线，擅长产品规划和用户增长。
+                    </p>
+                    <div class="mt-3 flex space-x-3">
+                        <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-blue-100 text-blue-800">
+                            产品管理
+                        </span>
+                        <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-purple-100 text-purple-800">
+                            用户增长
+                        </span>
+                    </div>
+                </div>
+
+                <!-- 导师2 -->
+                <div class="card p-6 flex flex-col items-center text-center">
+                    <img class="h-32 w-32 rounded-full object-cover" src="https://images.unsplash.com/photo-1573497620053-ea5300f94f21?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="导师头像">
+                    <h3 class="mt-6 text-xl font-medium text-gray-900">林芳</h3>
+                    <p class="text-sm text-primary-600">阿里巴巴 | 高级人力资源总监</p>
+                    <p class="mt-3 text-base text-gray-500">
+                        12年HR经验，专注于校园招聘和人才培养，深谙大厂招聘流程和人才选拔标准。
+                    </p>
+                    <div class="mt-3 flex space-x-3">
+                        <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800">
+                            人力资源
+                        </span>
+                        <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-yellow-100 text-yellow-800">
+                            面试技巧
+                        </span>
+                    </div>
+                </div>
+
+                <!-- 导师3 -->
+                <div class="card p-6 flex flex-col items-center text-center">
+                    <img class="h-32 w-32 rounded-full object-cover" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="导师头像">
+                    <h3 class="mt-6 text-xl font-medium text-gray-900">张远</h3>
+                    <p class="text-sm text-primary-600">字节跳动 | 技术负责人</p>
+                    <p class="mt-3 text-base text-gray-500">
+                        10年技术开发经验，参与过多个大型项目开发，擅长算法和系统架构设计，热衷于培养技术人才。
+                    </p>
+                    <div class="mt-3 flex space-x-3">
+                        <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-red-100 text-red-800">
+                            技术开发
+                        </span>
+                        <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-indigo-100 text-indigo-800">
+                            算法
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Stats -->
+    <section class="py-12 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <h2 class="section-title">社区数据</h2>
+                <p class="section-subtitle">加入日益壮大的FuturePreppers社区</p>
+            </div>
+            <div class="grid grid-cols-2 gap-5 sm:grid-cols-4">
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-4xl font-bold text-primary-600">18,000+</div>
+                    <div class="mt-2 text-sm text-gray-500">注册用户</div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-4xl font-bold text-primary-600">500+</div>
+                    <div class="mt-2 text-sm text-gray-500">行业导师</div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-4xl font-bold text-primary-600">120+</div>
+                    <div class="mt-2 text-sm text-gray-500">合作企业</div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-4xl font-bold text-primary-600">85%</div>
+                    <div class="mt-2 text-sm text-gray-500">就业成功率</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-12 bg-primary-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
+                    加入我们的社区
+                </h2>
+                <p class="mt-4 text-xl text-primary-100">
+                    连接数千名求职者和行业前辈，共同成长
+                </p>
+                <div class="mt-8 flex justify-center">
+                    <a href="signup.html" class="btn-accent px-8 py-3 text-lg">
+                        立即注册，免费加入
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1">
+                    <span class="text-2xl font-bold">FuturePreppers</span>
+                    <p class="mt-2 text-gray-300">
+                        新时期青年的求职旅伴
+                    </p>
+                    <div class="mt-4 flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-weixin text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-weibo text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-qq text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider">产品</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="features.html#mock-interview" class="text-base text-gray-300 hover:text-white">AI模拟面试</a></li>
+                        <li><a href="features.html#resume" class="text-base text-gray-300 hover:text-white">AI简历优化</a></li>
+                        <li><a href="features.html#job-tracker" class="text-base text-gray-300 hover:text-white">求职进度管理</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider">社区</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="community.html" class="text-base text-gray-300 hover:text-white">同辈交流</a></li>
+                        <li><a href="community.html" class="text-base text-gray-300 hover:text-white">导师指导</a></li>
+                        <li><a href="community.html" class="text-base text-gray-300 hover:text-white">内推机会</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider">公司</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="about.html" class="text-base text-gray-300 hover:text-white">关于我们</a></li>
+                        <li><a href="contact.html" class="text-base text-gray-300 hover:text-white">联系我们</a></li>
+                        <li><a href="privacy.html" class="text-base text-gray-300 hover:text-white">隐私政策</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
+                <div class="flex space-x-6 md:order-2">
+                    <p class="text-base text-gray-400">
+                        <a href="mailto:contact@futurepreppersapp.com" class="hover:text-gray-300">contact@futurepreppersapp.com</a>
+                    </p>
+                </div>
+                <p class="mt-8 text-base text-gray-400 md:mt-0 md:order-1">
+                    &copy; 2025 FuturePreppers. 保留所有权利。
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "futurepreppersapp",
+  "version": "1.0.0",
+  "description": "A career platform for college students powered by AI",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwindcss -i ./css/input.css -o ./css/output.css --watch",
+    "build": "tailwindcss -i ./css/input.css -o ./css/output.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "career",
+    "AI",
+    "job",
+    "interview",
+    "resume"
+  ],
+  "author": "FuturePreppers Team",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.3.0"
+  }
+}

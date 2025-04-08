@@ -1,0 +1,11 @@
+This is a placeholder file for the browser extension icons.
+
+In a real implementation, you would need to create the following icon files:
+- icon16.png (16x16 pixels)
+- icon48.png (48x48 pixels)
+- icon128.png (128x128 pixels)
+- icon16_active.png (active state icon)
+- icon48_active.png (active state icon)
+- icon128_active.png (active state icon)
+
+These icons should be designed with the FuturePreppers branding and color scheme.

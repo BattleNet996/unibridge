@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我们 - FuturePreppers</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="css/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex-shrink-0 flex items-center">
+                        <span class="text-primary-600 font-bold text-xl">FuturePreppers</span>
+                    </a>
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                        <a href="index.html" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">首页</a>
+                        <a href="features.html" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">功能</a>
+                        <a href="job-tracker.html" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">求职进度</a>
+                        <a href="community.html" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">社区</a>
+                        <a href="about.html" class="border-primary-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">关于我们</a>
+                    </div>
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:items-center space-x-4">
+                    <a href="login.html" class="text-gray-500 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium">登录</a>
+                    <a href="signup.html" class="btn-primary">注册</a>
+                </div>
+                <div class="-mr-2 flex items-center sm:hidden">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="sm:hidden hidden">
+            <div class="pt-2 pb-3 space-y-1">
+                <a href="index.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">首页</a>
+                <a href="features.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">功能</a>
+                <a href="job-tracker.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">求职进度</a>
+                <a href="community.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">社区</a>
+                <a href="about.html" class="bg-primary-50 border-primary-500 text-primary-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">关于我们</a>
+            </div>
+            <div class="pt-4 pb-3 border-t border-gray-200">
+                <div class="flex items-center px-4 space-x-3">
+                    <a href="login.html" class="text-gray-500 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium">登录</a>
+                    <a href="signup.html" class="btn-primary">注册</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="bg-gradient-to-r from-primary-600 to-primary-800 py-16 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-3xl sm:text-4xl font-bold mb-4">关于 FuturePreppers</h1>
+            <p class="text-xl opacity-90 max-w-3xl mx-auto">我们致力于帮助大学生用AI技术打造完美职业道路，从简历准备到求职跟踪，一站式解决方案。</p>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <h2 class="text-3xl font-bold mb-6">我们的故事</h2>
+                    <p class="text-lg text-gray-700 mb-6">
+                        FuturePreppers于2023年成立，当时是一群刚毕业的大学生，他们亲身体验了求职市场的挑战。他们受够了缺乏个性化指导和求职申请的压力，于是想象了一种利用AI技术来使求职过程更容易和有效的平台。
+                    </p>
+                    <p class="text-lg text-gray-700 mb-6">
+                        从最初的简单工具分析职位描述，到现在的全面平台，旨在支持学生整个职业生涯，从了解职位要求到跟踪申请和准备面试。
+                    </p>
+                    <p class="text-lg text-gray-700">
+                        今天，FuturePreppers 正在帮助全国数千名大学生获得顶尖公司的面试机会和职位，通过提供以前只有通过昂贵的职业指导服务才可获得的AI驱动的洞察力。
+                    </p>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="团队合作" class="rounded-lg shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Mission & Values Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16">我们的使命和价值观</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Mission -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="text-indigo-600 mb-4">
+                        <i class="fas fa-bullseye text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">我们的使命</h3>
+                    <p class="text-gray-700">
+                        使职业指导民主化，让每个大学生都能获得个性化的AI驱动的求职指导，无论他们的背景或资源如何。
+                    </p>
+                </div>
+
+                <!-- Vision -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="text-indigo-600 mb-4">
+                        <i class="fas fa-eye text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">我们的愿景</h3>
+                    <p class="text-gray-700">
+                        一个每个学生都有工具和指导来找到与他们技能、激情和职业目标相符的有意义的工作的世界。
+                    </p>
+                </div>
+
+                <!-- Values -->
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="text-indigo-600 mb-4">
+                        <i class="fas fa-heart text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">我们的价值观</h3>
+                    <ul class="text-gray-700 space-y-2">
+                        <li><span class="font-semibold">创新:</span> 不断改进我们的AI技术来更好地服务学生</li>
+                        <li><span class="font-semibold">可访问性:</span> 使职业指导对所有人都可用</li>
+                        <li><span class="font-semibold">赋权:</span> 给学生控制他们的职业生涯的权力</li>
+                        <li><span class="font-semibold">隐私:</span> 尊重用户数据并保持最高的安全标准</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet the Team Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16">meet我们的团队</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Team Member 1 -->
+                <div class="text-center">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Chen" class="rounded-full w-40 h-40 mx-auto mb-4 shadow-lg">
+                    <h3 class="text-xl font-semibold">Sarah Chen</h3>
+                    <p class="text-indigo-600 mb-3">联合创始人兼首席执行官</p>
+                    <p class="text-gray-700 mb-4">前职业顾问，致力于使职业指导对所有学生都可用。</p>
+                    <div class="flex justify-center space-x-3">
+                        <a href="#" class="text-gray-500 hover:text-indigo-600"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-500 hover:text-indigo-600"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="text-center">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Marcus Johnson" class="rounded-full w-40 h-40 mx-auto mb-4 shadow-lg">
+                    <h3 class="text-xl font-semibold">Marcus Johnson</h3>
+                    <p class="text-indigo-600 mb-3">联合创始人兼首席技术官</p>
+                    <p class="text-gray-700 mb-4">AI专家，曾在领先的科技公司工作，致力于使AI技术更易于使用和实用。</p>
+                    <div class="flex justify-center space-x-3">
+                        <a href="#" class="text-gray-500 hover:text-indigo-600"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-500 hover:text-indigo-600"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="text-center">
+                    <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Aisha Patel" class="rounded-full w-40 h-40 mx-auto mb-4 shadow-lg">
+                    <h3 class="text-xl font-semibold">Aisha Patel</h3>
+                    <p class="text-indigo-600 mb-3">产品负责人</p>
+                    <p class="text-gray-700 mb-4">产品设计师，拥有UX研究背景，致力于创建直观的用户体验。</p>
+                    <div class="flex justify-center space-x-3">
+                        <a href="#" class="text-gray-500 hover:text-indigo-600"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-500 hover:text-indigo-600"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                </div>
+
+                <!-- Team Member 4 -->
+                <div class="text-center">
+                    <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="David Kim" class="rounded-full w-40 h-40 mx-auto mb-4 shadow-lg">
+                    <h3 class="text-xl font-semibold">David Kim</h3>
+                    <p class="text-indigo-600 mb-3">合作伙伴负责人</p>
+                    <p class="text-gray-700 mb-4">前招聘经理，拥有广泛的行业联系，帮助桥接学生和雇主之间的差距。</p>
+                    <div class="flex justify-center space-x-3">
+                        <a href="#" class="text-gray-500 hover:text-indigo-600"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-500 hover:text-indigo-600"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-indigo-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">人们怎么说</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md relative">
+                    <div class="text-indigo-600 absolute -top-5 left-5">
+                        <i class="fas fa-quote-left text-4xl"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 pt-6">
+                        "FuturePreppers彻底改变了我的求职过程。AI洞察帮助我为每个申请定制简历。我在之前被拒绝的公司获得了面试机会！"
+                    </p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="学生" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Emily R.</h4>
+                            <p class="text-gray-600 text-sm">计算机科学专业，麻省理工学院</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md relative">
+                    <div class="text-indigo-600 absolute -top-5 left-5">
+                        <i class="fas fa-quote-left text-4xl"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 pt-6">
+                        "作为第一代大学生，我没有网络或指导来指导我的求职。FuturePreppers给我提供了专业级别的建议，帮助我获得了梦寐以求的实习机会。"
+                    </p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/men/54.jpg" alt="学生" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Carlos M.</h4>
+                            <p class="text-gray-600 text-sm">商业管理，加州大学洛杉矶分校</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md relative">
+                    <div class="text-indigo-600 absolute -top-5 left-5">
+                        <i class="fas fa-quote-left text-4xl"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 pt-6">
+                        "我申请了数十个职位，但没有回应。应用程序跟踪器让我保持组织，AI提示帮助我彻底改造我的方法。现在我有多个offer！"
+                    </p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/79.jpg" alt="学生" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Taylor J.</h4>
+                            <p class="text-gray-600 text-sm">心理学专业，密歇根大学</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <h2 class="text-3xl font-bold mb-6">联系我们</h2>
+                    <p class="text-lg text-gray-700 mb-8">
+                        有关于FuturePreppers的问题吗？我们很乐意听到您的意见！通过联系表单或我们的社交媒体渠道联系我们的团队。
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-indigo-600 mt-1 mr-3 w-5 text-center"></i>
+                            <p class="text-gray-700">123创新驱动，帕洛阿尔托，加州94301</p>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-envelope text-indigo-600 mt-1 mr-3 w-5 text-center"></i>
+                            <p class="text-gray-700">hello@futurepreppers.com</p>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-phone-alt text-indigo-600 mt-1 mr-3 w-5 text-center"></i>
+                            <p class="text-gray-700">(650) 555-1234</p>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <h3 class="font-semibold mb-3">关注我们</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-gray-600 hover:text-indigo-600 transition"><i class="fab fa-twitter text-xl"></i></a>
+                            <a href="#" class="text-gray-600 hover:text-indigo-600 transition"><i class="fab fa-linkedin text-xl"></i></a>
+                            <a href="#" class="text-gray-600 hover:text-indigo-600 transition"><i class="fab fa-instagram text-xl"></i></a>
+                            <a href="#" class="text-gray-600 hover:text-indigo-600 transition"><i class="fab fa-facebook text-xl"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <form class="bg-white p-8 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-6">发送消息</h3>
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-700 mb-2">您的名字</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700 mb-2">您的邮箱</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        </div>
+                        <div class="mb-4">
+                            <label for="subject" class="block text-gray-700 mb-2">主题</label>
+                            <input type="text" id="subject" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 mb-2">您的消息</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+                        </div>
+                        <button type="submit" class="bg-indigo-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition w-full">发送消息</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">FuturePreppers</h3>
+                    <p class="text-gray-400">赋予学生AI驱动的职业指导和求职工具。</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">快速链接</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html" class="hover:text-white transition">首页</a></li>
+                        <li><a href="features.html" class="hover:text-white transition">功能</a></li>
+                        <li><a href="job-tracker.html" class="hover:text-white transition">求职进度</a></li>
+                        <li><a href="about.html" class="hover:text-white transition">关于我们</a></li>
+                        <li><a href="community.html" class="hover:text-white transition">社区</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">支持</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">常见问题</a></li>
+                        <li><a href="#" class="hover:text-white transition">联系我们</a></li>
+                        <li><a href="#" class="hover:text-white transition">隐私政策</a></li>
+                        <li><a href="#" class="hover:text-white transition">服务条款</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">新闻通讯</h4>
+                    <p class="text-gray-400 mb-4">保持最新的功能和新闻。</p>
+                    <div class="flex">
+                        <input type="email" placeholder="您的邮箱" class="px-4 py-2 rounded-l focus:outline-none">
+                        <button class="bg-indigo-600 text-white px-4 py-2 rounded-r hover:bg-indigo-700 transition">订阅</button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-gray-400 text-center">
+                <p>&copy; 2025 FuturePreppers. 保留所有权利。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

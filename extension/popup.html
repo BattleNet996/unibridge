@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FuturePreppers求职助手</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            width: 320px;
+            min-height: 300px;
+        }
+        .loader {
+            border-top-color: #3498db;
+            -webkit-animation: spinner 1.5s linear infinite;
+            animation: spinner 1.5s linear infinite;
+        }
+        @-webkit-keyframes spinner {
+            0% { -webkit-transform: rotate(0deg); }
+            100% { -webkit-transform: rotate(360deg); }
+        }
+        @keyframes spinner {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <div class="px-4 py-3 border-b border-gray-200">
+        <div class="flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="text-xl font-bold text-blue-600">FuturePreppers</div>
+            </div>
+            <div>
+                <button id="settings-btn" class="text-gray-500 hover:text-gray-700">
+                    <i class="fas fa-cog"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Job extraction view -->
+    <div id="job-extraction-view" class="p-4">
+        <div class="bg-blue-50 rounded-lg p-3 mb-4">
+            <div class="flex">
+                <div class="flex-shrink-0">
+                    <i class="fas fa-info-circle text-blue-600"></i>
+                </div>
+                <div class="ml-3">
+                    <p class="text-sm text-blue-700">
+                        当前页面检测到职位信息，可以直接提取并保存到您的求职管理系统。
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow p-4 mb-4">
+            <div class="mb-4">
+                <label class="block text-sm font-medium text-gray-700 mb-1">公司名称</label>
+                <div id="company-name" class="text-sm text-gray-900 border border-gray-300 rounded-md p-2 bg-gray-50">加载中...</div>
+            </div>
+            <div class="mb-4">
+                <label class="block text-sm font-medium text-gray-700 mb-1">职位名称</label>
+                <div id="job-title" class="text-sm text-gray-900 border border-gray-300 rounded-md p-2 bg-gray-50">加载中...</div>
+            </div>
+            <div class="mb-4">
+                <label class="block text-sm font-medium text-gray-700 mb-1">地点</label>
+                <div id="job-location" class="text-sm text-gray-900 border border-gray-300 rounded-md p-2 bg-gray-50">加载中...</div>
+            </div>
+            <div class="text-right">
+                <button id="edit-btn" class="inline-flex items-center px-3 py-1 border border-transparent text-sm font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                    <i class="fas fa-edit mr-1"></i> 编辑
+                </button>
+            </div>
+        </div>
+
+        <button id="save-job-btn" class="w-full flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+            <i class="fas fa-save mr-2"></i> 保存到我的求职管理
+        </button>
+    </div>
+
+    <!-- Loading view -->
+    <div id="loading-view" class="hidden p-4 flex flex-col items-center justify-center h-56">
+        <div class="loader ease-linear rounded-full border-4 border-t-4 border-gray-200 h-12 w-12 mb-4"></div>
+        <p class="text-gray-700 text-sm" id="loading-text">正在提取职位信息...</p>
+    </div>
+
+    <!-- No job view -->
+    <div id="no-job-view" class="hidden p-4">
+        <div class="bg-yellow-50 rounded-lg p-3 mb-4">
+            <div class="flex">
+                <div class="flex-shrink-0">
+                    <i class="fas fa-exclamation-triangle text-yellow-600"></i>
+                </div>
+                <div class="ml-3">
+                    <p class="text-sm text-yellow-700">
+                        无法在当前页面检测到职位信息。请访问招聘页面或手动添加。
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-4">
+            <button id="manual-add-btn" class="w-full flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                <i class="fas fa-plus mr-2"></i> 手动添加
+            </button>
+        </div>
+
+        <div class="text-center">
+            <a href="#" id="open-dashboard-btn" class="inline-flex items-center text-sm text-blue-600 hover:text-blue-800">
+                <i class="fas fa-external-link-alt mr-1"></i> 打开求职管理面板
+            </a>
+        </div>
+    </div>
+
+    <!-- Manual add view -->
+    <div id="manual-add-view" class="hidden p-4">
+        <div class="mb-4">
+            <div class="flex items-center justify-between">
+                <h3 class="text-lg font-medium text-gray-900">手动添加职位</h3>
+                <button id="back-btn" class="text-gray-500 hover:text-gray-700">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+            </div>
+        </div>
+
+        <form id="job-form">
+            <div class="mb-4">
+                <label for="company-input" class="block text-sm font-medium text-gray-700 mb-1">公司名称</label>
+                <input type="text" id="company-input" class="shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md" required>
+            </div>
+            <div class="mb-4">
+                <label for="title-input" class="block text-sm font-medium text-gray-700 mb-1">职位名称</label>
+                <input type="text" id="title-input" class="shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md" required>
+            </div>
+            <div class="mb-4">
+                <label for="location-input" class="block text-sm font-medium text-gray-700 mb-1">地点</label>
+                <input type="text" id="location-input" class="shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md">
+            </div>
+
+            <button type="submit" class="w-full flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                <i class="fas fa-save mr-2"></i> 保存
+            </button>
+        </form>
+    </div>
+
+    <!-- Settings view -->
+    <div id="settings-view" class="hidden p-4">
+        <div class="mb-4">
+            <div class="flex items-center justify-between">
+                <h3 class="text-lg font-medium text-gray-900">设置</h3>
+                <button id="settings-back-btn" class="text-gray-500 hover:text-gray-700">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="mb-4">
+            <label for="api-key-input" class="block text-sm font-medium text-gray-700 mb-1">Gemini API密钥</label>
+            <input type="password" id="api-key-input" class="shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md">
+            <p class="mt-1 text-xs text-gray-500">用于AI职位信息提取功能，请从Google获取API密钥</p>
+        </div>
+
+        <div class="mb-4">
+            <label for="dashboard-url-input" class="block text-sm font-medium text-gray-700 mb-1">求职管理面板URL</label>
+            <input type="text" id="dashboard-url-input" class="shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md" placeholder="例如: https://futurepreppersapp.com/job-tracker">
+        </div>
+
+        <div class="mb-4">
+            <div class="flex items-center">
+                <input id="auto-detect-toggle" type="checkbox" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                <label for="auto-detect-toggle" class="ml-2 block text-sm text-gray-700">
+                    自动检测职位信息
+                </label>
+            </div>
+        </div>
+
+        <button id="save-settings-btn" class="w-full flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+            <i class="fas fa-save mr-2"></i> 保存设置
+        </button>
+    </div>
+
+    <!-- Success view -->
+    <div id="success-view" class="hidden p-4 flex flex-col items-center justify-center h-56">
+        <div class="bg-green-100 rounded-full p-3 mb-4">
+            <i class="fas fa-check text-green-600 text-2xl"></i>
+        </div>
+        <p class="text-gray-900 font-medium mb-1">保存成功!</p>
+        <p class="text-gray-500 text-sm mb-4">职位信息已添加到您的求职管理系统</p>
+        <button id="view-jobs-btn" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+            <i class="fas fa-external-link-alt mr-2"></i> 查看我的申请列表
+        </button>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>

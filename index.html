@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FuturePreppers - AI驱动的职业平台</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="css/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex-shrink-0 flex items-center">
+                        <span class="text-primary-600 font-bold text-xl">FuturePreppers</span>
+                    </a>
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                        <a href="index.html" class="border-primary-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">首页</a>
+                        <a href="features.html" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">功能</a>
+                        <a href="job-tracker.html" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">求职进度</a>
+                        <a href="community.html" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">社区</a>
+                        <a href="about.html" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">关于我们</a>
+                    </div>
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:items-center space-x-4">
+                    <a href="login.html" class="text-gray-500 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium">登录</a>
+                    <a href="signup.html" class="btn-primary">注册</a>
+                </div>
+                <div class="-mr-2 flex items-center sm:hidden">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="sm:hidden hidden">
+            <div class="pt-2 pb-3 space-y-1">
+                <a href="index.html" class="bg-primary-50 border-primary-500 text-primary-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">首页</a>
+                <a href="features.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">功能</a>
+                <a href="job-tracker.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">求职进度</a>
+                <a href="community.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">社区</a>
+                <a href="about.html" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">关于我们</a>
+            </div>
+            <div class="pt-4 pb-3 border-t border-gray-200">
+                <div class="flex items-center px-4 space-x-3">
+                    <a href="login.html" class="text-gray-500 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium">登录</a>
+                    <a href="signup.html" class="btn-primary">注册</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative py-20 bg-gradient-to-r from-primary-600 to-primary-800 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex md:items-center md:justify-between">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl sm:text-5xl font-bold mb-6 leading-tight">用AI技术<br>打造你的职业未来</h1>
+                    <p class="text-xl mb-8 opacity-90">FuturePreppers帮助大学生在竞争激烈的就业市场中脱颖而出，通过智能分析职位要求，量身定制申请材料，提高面试成功率。</p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="signup.html" class="bg-white text-primary-600 font-medium py-3 px-6 rounded-lg hover:bg-gray-100 transition duration-300 shadow-md">免费注册</a>
+                        <a href="features.html" class="bg-primary-700 border border-primary-500 text-white font-medium py-3 px-6 rounded-lg hover:bg-primary-800 transition duration-300 shadow-md">了解更多</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1573497620053-ea5300f94f21?ixlib=rb-4.0.3&auto=format&fit=crop&w=1050&q=80" alt="学生在电脑前" class="rounded-lg shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">FuturePreppers如何帮助你</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-gray-50 rounded-lg shadow-sm p-6 hover:shadow-md transition duration-300">
+                    <div class="bg-primary-100 w-14 h-14 rounded-full flex items-center justify-center mb-5">
+                        <i class="fas fa-search text-primary-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">智能职位匹配</h3>
+                    <p class="text-gray-600">基于你的技能、兴趣和经验，我们的AI系统会推荐最适合你的工作机会。</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="bg-gray-50 rounded-lg shadow-sm p-6 hover:shadow-md transition duration-300">
+                    <div class="bg-primary-100 w-14 h-14 rounded-full flex items-center justify-center mb-5">
+                        <i class="fas fa-file-alt text-primary-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">简历优化</h3>
+                    <p class="text-gray-600">AI分析每个职位描述，提供个性化建议，让你的简历和求职信脱颖而出。</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="bg-gray-50 rounded-lg shadow-sm p-6 hover:shadow-md transition duration-300">
+                    <div class="bg-primary-100 w-14 h-14 rounded-full flex items-center justify-center mb-5">
+                        <i class="fas fa-chart-line text-primary-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">求职跟踪</h3>
+                    <p class="text-gray-600">轻松管理所有申请，设置提醒，追踪面试进度，确保不错过任何机会。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <p class="text-4xl font-bold text-primary-600 mb-2">10,000+</p>
+                    <p class="text-gray-600">学生用户</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <p class="text-4xl font-bold text-primary-600 mb-2">5,000+</p>
+                    <p class="text-gray-600">企业合作伙伴</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <p class="text-4xl font-bold text-primary-600 mb-2">85%</p>
+                    <p class="text-gray-600">求职成功率</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-primary-600 to-primary-800 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-6">准备好提升你的职业发展了吗？</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">加入数千名使用FuturePreppers找到理想工作和实习的学生。</p>
+            <a href="signup.html" class="inline-block bg-white text-primary-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition">立即注册 - 完全免费</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-12">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1">
+                    <span class="text-2xl font-bold">FuturePreppers</span>
+                    <p class="mt-2 text-gray-300">AI驱动的职业发展平台，<br>为大学生量身打造。</p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-medium mb-4">功能</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#" class="hover:text-white">职位匹配</a></li>
+                        <li><a href="#" class="hover:text-white">简历优化</a></li>
+                        <li><a href="#" class="hover:text-white">求职跟踪</a></li>
+                        <li><a href="#" class="hover:text-white">面试辅导</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-medium mb-4">资源</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#" class="hover:text-white">求职指南</a></li>
+                        <li><a href="#" class="hover:text-white">行业报告</a></li>
+                        <li><a href="#" class="hover:text-white">学习中心</a></li>
+                        <li><a href="#" class="hover:text-white">常见问题</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-medium mb-4">联系我们</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><i class="fas fa-envelope mr-2"></i> contact@futurepreppers.com</li>
+                        <li><i class="fas fa-phone mr-2"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i> 101 University Ave, Palo Alto, CA</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between">
+                <p class="text-gray-300"> 2025 FuturePreppers. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-300 hover:text-white">隐私政策</a>
+                    <a href="#" class="text-gray-300 hover:text-white">服务条款</a>
+                    <a href="#" class="text-gray-300 hover:text-white">Cookie政策</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 移动菜单切换
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

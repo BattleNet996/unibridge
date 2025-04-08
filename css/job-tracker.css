@@ -1,0 +1,314 @@
+/* 
+ * FuturePreppers - Job Tracker Custom Styles
+ * 
+ * This file uses Tailwind CSS's @apply directive which requires PostCSS processing.
+ * The @apply directive allows composing custom CSS using Tailwind's utility classes.
+ * See: https://tailwindcss.com/docs/functions-and-directives#apply
+ */
+
+/**
+ * FuturePreppers - Job Tracker Custom Styles
+ */
+
+/* Custom button styling */
+.btn-primary {
+  @apply inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md shadow-sm text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500;
+}
+
+.btn-accent {
+  @apply inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-white bg-opacity-20 hover:bg-opacity-30 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-400;
+}
+
+.btn-accent-secondary {
+  @apply inline-flex items-center px-4 py-2 border border-white border-opacity-30 text-sm font-medium rounded-md shadow-sm text-white bg-transparent hover:bg-white hover:bg-opacity-10 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-400;
+}
+
+.btn-danger {
+  @apply inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500;
+}
+
+/* Status badge colors */
+.status-wishlist {
+  @apply bg-gray-100 text-gray-800;
+}
+
+.status-applied {
+  @apply bg-blue-100 text-blue-800;
+}
+
+.status-phone_screen {
+  @apply bg-yellow-100 text-yellow-800;
+}
+
+.status-interview {
+  @apply bg-purple-100 text-purple-800;
+}
+
+.status-offer {
+  @apply bg-green-100 text-green-800;
+}
+
+.status-rejected {
+  @apply bg-red-100 text-red-800;
+}
+
+/* Animation for loading states */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Calendar styles */
+.calendar-event {
+  @apply px-2 py-1 rounded-md text-xs font-medium;
+}
+
+.calendar-event-deadline {
+  @apply bg-red-100 text-red-800 border border-red-200;
+}
+
+.calendar-event-interview {
+  @apply bg-purple-100 text-purple-800 border border-purple-200;
+}
+
+/* Card transitions */
+.card-transition {
+  transition: all 0.3s ease;
+}
+
+.card-transition:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Job stages kanban board */
+.kanban-column {
+  @apply bg-gray-50 rounded-lg p-4 min-h-[300px] w-full;
+}
+
+.kanban-card {
+  @apply bg-white rounded-lg shadow p-3 mb-3 cursor-move border-l-4;
+}
+
+.border-wishlist {
+  @apply border-gray-400;
+}
+
+.border-applied {
+  @apply border-blue-400;
+}
+
+.border-phone_screen {
+  @apply border-yellow-400;
+}
+
+.border-interview {
+  @apply border-purple-400;
+}
+
+.border-offer {
+  @apply border-green-400;
+}
+
+.border-rejected {
+  @apply border-red-400;
+}
+
+/* AI Assistant section styling */
+.ai-assistant-container {
+  background: linear-gradient(135deg, #0ea5e9 0%, #2563eb 100%);
+}
+
+/* Tooltip styling */
+.tooltip {
+  @apply relative inline-block;
+}
+
+.tooltip .tooltip-text {
+  @apply invisible absolute z-10 w-48 bg-gray-900 text-white text-xs rounded-md py-2 px-3 bottom-full left-1/2 transform -translate-x-1/2 mb-1 opacity-0 transition-opacity duration-300;
+}
+
+.tooltip:hover .tooltip-text {
+  @apply visible opacity-100;
+}
+
+/* Form validation styles */
+.input-error {
+  @apply border-red-500 focus:ring-red-500 focus:border-red-500;
+}
+
+.error-message {
+  @apply text-red-500 text-xs mt-1;
+}
+
+/* File upload area */
+.file-upload-area {
+  @apply border-2 border-dashed border-gray-300 rounded-lg p-6 text-center cursor-pointer hover:bg-gray-50 transition duration-150;
+}
+
+.file-upload-area.active {
+  @apply border-primary-500 bg-primary-50;
+}
+
+/* Print-specific styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  .print-only {
+    display: block !important;
+  }
+}
+
+/* Reminder card styling */
+.reminder-card {
+  @apply bg-yellow-50 rounded-lg shadow-lg p-4 mb-2 border-l-4 border-yellow-500 max-w-sm transition-all duration-300;
+}
+
+.reminder-card:hover {
+  @apply transform -translate-y-1 shadow-xl;
+}
+
+.reminder-card.urgent {
+  @apply bg-red-50 border-red-500;
+}
+
+.reminder-card.urgent .reminder-title {
+  @apply text-red-800;
+}
+
+.reminder-card.urgent .reminder-text {
+  @apply text-red-600;
+}
+
+/* Tips modal styling */
+.tips-section {
+  @apply mb-4 pb-4 border-b border-gray-200;
+}
+
+.tips-section:last-child {
+  @apply border-b-0 pb-0 mb-0;
+}
+
+.tips-section-title {
+  @apply font-medium text-gray-900 mb-2;
+}
+
+.tips-list {
+  @apply space-y-2 text-gray-600;
+}
+
+.tips-list-item {
+  @apply flex items-start;
+}
+
+.tips-list-item i {
+  @apply text-primary-500 mt-1 mr-2;
+}
+
+/* Application cards for alternate views */
+.application-card {
+  @apply bg-white rounded-lg shadow p-4 mb-4 border-l-4 transition-all duration-300;
+}
+
+.application-card:hover {
+  @apply transform -translate-y-1 shadow-md;
+}
+
+.application-card-header {
+  @apply flex justify-between items-start mb-3;
+}
+
+.application-card-title {
+  @apply font-medium text-gray-900;
+}
+
+.application-card-company {
+  @apply text-sm text-gray-500;
+}
+
+.application-card-date {
+  @apply text-xs text-gray-500 mt-1;
+}
+
+.application-card-location {
+  @apply text-xs text-gray-500 flex items-center mt-1;
+}
+
+.application-card-location i {
+  @apply mr-1;
+}
+
+.application-card-footer {
+  @apply flex justify-between items-center mt-3 pt-3 border-t border-gray-100;
+}
+
+.application-card-actions {
+  @apply flex space-x-2;
+}
+
+/* CSV Export button pulsing effect */
+@keyframes pulse-border {
+  0%, 100% {
+    border-color: rgba(14, 165, 233, 0.5);
+  }
+  50% {
+    border-color: rgba(14, 165, 233, 1);
+  }
+}
+
+.csv-export-btn {
+  animation: pulse-border 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Application Tips styling */
+.skills-tag {
+  @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800 mr-2 mb-2;
+}
+
+.keyword-tag {
+  @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800 mr-2 mb-2;
+}
+
+.question-item {
+  @apply bg-gray-50 p-3 rounded-md mb-2;
+}
+
+/* Sorting indicators */
+.sort-indicator {
+  @apply ml-1 text-gray-400;
+}
+
+.sort-active {
+  @apply text-primary-600;
+}
+
+/* Loading overlay */
+.loading-overlay {
+  @apply fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center z-50;
+}
+
+.loading-spinner {
+  @apply h-12 w-12 border-4 border-white border-opacity-25 rounded-full;
+  border-top-color: white;
+  animation: spinner 1s linear infinite;
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
